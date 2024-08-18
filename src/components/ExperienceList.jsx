@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
 export default function ExperienceList({
    year,
@@ -12,34 +13,50 @@ export default function ExperienceList({
    index,
 }) {
    const alternateStyle = index % 2 === 0 ? "bg-white" : "bg-[#bee7e7] ";
+   const { theme, themeStyle } = useContext(ThemeContext);
 
    return (
-      <div
-         className={`flex justify-center py-4 w-full ${
-            index % 2 === 0 ? "bg-[#bee7e7] " : "bg-white "
-         }`}
-      >
-         <div className="flex max-w-screen-lg place-items-center w-full ">
-            <div className="font-primary flex justify-center self-center text-[30px] w-[20%]">
-               <div className="h-[100%] z-10 relative self-center text-custom-third">
-                  {year}
+      <div className={`flex justify-center py-4 w-full `}>
+         <div className="flex max-sm:flex-col max-sm:  w-full justify-center experiencegroup group hover:scale-105 duration-300">
+            <div className="relative flex w-[60%] max-sm:w-[100%] max-sm:px-4">
+               <div className="font-primary flex justify-center self-center h-[100%]">
+                  <div
+                     className={`absolute z-0 flex items-center self-center justify-center bg-[#bee7e7] h-[40px] rounded-full w-[40px]`}
+                  ></div>
+                  <div className="h-[10px] absolute rounded-full duration-200 delay-300 w-[10px] group-hover:scale-100 scale-0 bg-custom-secondary self-center z-[300]"></div>
                </div>
-               <div
-                  className={`absolute  z-0 flex items-center self-center ${alternateStyle} bg-[#bee7e7] h-[100px] rounded-full text-center w-[100px]`}
-               ></div>
+               <div className="w-[100%] relative self-center experienceHover  z-0 ">
+                  <div
+                     className={`${themeStyle.headingColor} max-sm:rounded-full pl-7 text-[20px] text-custom-secondary font-bold h-[10px] bg-[#bee7e7]  `}
+                  >
+                     <div className="absolute -top-7">{year}</div>
+                  </div>
+               </div>
             </div>
-            <div className="w-[40%] relative  self-center z-0">
-               <div
-                  className={`-mx-[70px]  h-[20px] self-center rounded-full text-center ${alternateStyle}`}
-               ></div>
-            </div>
+
             <div
-               className={`w-[40%] text-xl z-10  p-3 ${alternateStyle} h-[100%] self-center rounded-xl text-center`}
+               className={`${
+                  theme === "light" ? "bg-white" : "bg-gray-800"
+               } max-sm:w-[90%] w-[40%] text-xl z-10  p-3  h-[100%] self-center rounded-xl text-center shadow-md`}
             >
-               <div className="font-primary text-custom-third text-2xl">
+               <div
+                  className={`${
+                     theme === "light"
+                        ? "text-custom-third"
+                        : "text-custom-background"
+                  } font-primary text-2xl`}
+               >
                   {employer}
                </div>
-               <div className="font-primary text-custom-third">{job}</div>
+               <div
+                  className={`${
+                     theme === "light"
+                        ? "text-custom-third"
+                        : "text-custom-background"
+                  } font-primary `}
+               >
+                  {job}
+               </div>
 
                <ul>
                   {role1 && <li className="text-[17px] leading-5"> {role1}</li>}

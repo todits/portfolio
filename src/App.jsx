@@ -67,7 +67,7 @@ function App() {
             ))}
          </Header>
          <div
-            className={`${themeStyle.backgroundColor} ${themeStyle.textColor}`}
+            className={`${themeStyle.backgroundColor} ${themeStyle.textColor} min-h-screen h-full`}
          >
             <Routes>
                <Route

@@ -106,7 +106,7 @@ const Home = ({ onSelectNav }) => {
                </h2>
             </div>
 
-            <div className="w-[100%] h-[100%] max-sm:h-[80vh] flex justify-between max-sm:gap-[45px] flex-col relative ">
+            <div className="w-[100%] h-[100%] max-sm:min-h-[80vh] max-sm:h-full flex justify-between max-sm:gap-[45px] flex-col relative ">
                <div className="flex px-[25px] mx-auto  h-[auto] max-sm:my-[10px]">
                   <div className="max-w-screen-xl flex flex-col justify-center w-[60%] max-sm:w-[100%] ">
                      <h3

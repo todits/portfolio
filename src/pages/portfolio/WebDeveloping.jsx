@@ -1,15 +1,49 @@
-import React, { useContext } from "react"
-import WebSlide from "../../components/WebSlide"
-import Footer from "../../components/Footer"
-import { skills } from "../../records/records"
-import Portfolio from "../Portfolio"
-import image1 from "../../assets/images/skills/webDeveloping/project1.png"
-import image2 from "../../assets/images/skills/webDeveloping/project2.png"
-import image3 from "../../assets/images/skills/webDeveloping/project3.png"
-import image4 from "../../assets/images/skills/webDeveloping/project4.png"
-import { ThemeContext } from "../../context/ThemeContext"
+import React, { useContext } from "react";
+import WebSlide from "../../components/WebSlide";
+import Footer from "../../components/Footer";
+import { skills } from "../../records/records";
+import Portfolio from "../Portfolio";
+import image1 from "../../assets/images/skills/webDeveloping/project1.png";
+import image2 from "../../assets/images/skills/webDeveloping/project2.png";
+import image3 from "../../assets/images/skills/webDeveloping/project3.png";
+import image4 from "../../assets/images/skills/webDeveloping/project4.png";
+import image5 from "../../assets/images/skills/webDeveloping/project5.png";
+import { ThemeContext } from "../../context/ThemeContext";
 
 const Projects = [
+   {
+      id: 4,
+      image: image4,
+      title: "Tic-Tac-Toe Application",
+      link: "https://tic-tac-toe-pi-pied.vercel.app/",
+      description:
+         "Webpage application featuring a classic game interface for interactive play and scoring.",
+      skills: [
+         { id: 2, skill: "CSS" },
+         { id: 1, skill: "ReactJS" },
+         { id: 6, skill: "JS" },
+         { id: 7, skill: "Udemy" },
+         { id: 3, skill: "mini game" },
+         { id: 5, skill: "mobile responsive" },
+         { id: 4, skill: "2 players" },
+      ],
+   },
+   {
+      id: 5,
+      image: image5,
+      title: "Web Builder Assignment",
+      link: "https://home-project-tau.vercel.app/",
+      description:
+         "A task from my previous application involved improving and revamping a single webpage, using the existing page as a reference.",
+      skills: [
+         { id: 2, skill: "CSS" },
+         { id: 1, skill: "ReactJS" },
+         { id: 6, skill: "JS" },
+         { id: 3, skill: "TypeScript" },
+         { id: 5, skill: "mobile responsive" },
+         { id: 3, skill: "useContext" },
+      ],
+   },
    {
       id: 1,
       image: image1,
@@ -22,7 +56,7 @@ const Projects = [
          { id: 2, skill: "CSS" },
          { id: 3, skill: "Vite" },
          { id: 4, skill: "organizer" },
-         { id: 5, skill: "java" },
+         { id: 5, skill: "JS" },
          { id: 6, skill: "Udemy Course" },
          { id: 7, skill: "tasks" },
       ],
@@ -38,7 +72,7 @@ const Projects = [
          { id: 1, skill: "ReactJS" },
          { id: 2, skill: "CSS" },
          { id: 3, skill: "skill game" },
-         { id: 6, skill: "Java" },
+         { id: 6, skill: "JS" },
          { id: 7, skill: "Udemy Course" },
          { id: 4, skill: "useState" },
          { id: 5, skill: "challenge" },
@@ -60,31 +94,14 @@ const Projects = [
          { id: 5, skill: "calculator" },
       ],
    },
-   {
-      id: 4,
-      image: image4,
-      title: "Tic-Tac-Toe Application",
-      link: "https://tic-tac-toe-pi-pied.vercel.app/",
-      description:
-         "Webpage application featuring a classic game interface for interactive play and scoring.",
-      skills: [
-         { id: 2, skill: "CSS" },
-         { id: 1, skill: "ReactJS" },
-         { id: 3, skill: "mini game" },
-         { id: 6, skill: "Java" },
-         { id: 7, skill: "Udemy" },
-         { id: 5, skill: "2 players" },
-         { id: 5, skill: "mobile responsive" },
-      ],
-   },
-]
+];
 
 function WebDeveloping() {
-   const { themeStyle } = useContext(ThemeContext)
+   const { themeStyle } = useContext(ThemeContext);
 
-   const repeatCount = 4 // Number of times to repeat the `skills` rendering
+   const repeatCount = 4; // Number of times to repeat the `skills` rendering
 
-   const repeatedSkills = []
+   const repeatedSkills = [];
    for (let i = 0; i < repeatCount; i++) {
       repeatedSkills.push(
          ...skills.map(({ id, name, src, color, rate }) => (
@@ -96,7 +113,7 @@ function WebDeveloping() {
                rate={rate}
             />
          ))
-      )
+      );
    }
 
    return (
@@ -180,7 +197,7 @@ function WebDeveloping() {
             </div>
          </div>
       </div>
-   )
+   );
 }
 
-export default WebDeveloping
+export default WebDeveloping;

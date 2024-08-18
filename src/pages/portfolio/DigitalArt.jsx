@@ -1,28 +1,28 @@
-import React, { useState, useEffect, useContext } from "react"
-import DigitalSlide from "../../components/DigitalSlide"
-import { DIGITALIMAGES } from "../../records/imageRecords"
-import VideoSlide from "../../components/VideoSlide"
-import { digitalArtIcon } from "../../records/records"
-import cover from "../../assets/images/skills/digitalArt/picture/cover.png"
-import { ThemeContext } from "../../context/ThemeContext"
+import React, { useState, useEffect, useContext } from "react";
+import DigitalSlide from "../../components/DigitalSlide";
+import { DIGITALIMAGES } from "../../records/imageRecords";
+import VideoSlide from "../../components/VideoSlide";
+import { digitalArtIcon } from "../../records/records";
+import cover from "../../assets/images/skills/digitalArt/picture/cover.png";
+import { ThemeContext } from "../../context/ThemeContext";
 
 function DigitalArt() {
-   const [image, setImage] = useState("sample")
-   const [showImage, setShowImage] = useState(true)
-   const { themeStyle } = useContext(ThemeContext)
+   const [image, setImage] = useState("sample");
+   const [showImage, setShowImage] = useState(true);
+   const { themeStyle } = useContext(ThemeContext);
 
    useEffect(() => {
-      console.log("Selected Skill:")
-   }, [image])
+      console.log("Selected Skill:");
+   }, [image]);
 
    const handleClickImage = (getimage) => {
-      setImage(getimage.picture)
-      setShowImage(false)
+      setImage(getimage.picture);
+      setShowImage(false);
 
       setTimeout(() => {
-         setShowImage(true)
-      }, 0)
-   }
+         setShowImage(true);
+      }, 0);
+   };
 
    return (
       <div
@@ -39,11 +39,11 @@ function DigitalArt() {
                         name={icon}
                         isSelected={image === picture}
                      />
-                  )
+                  );
                })}
             </div>
          </div>
-         <div className="max-md:flex-col flex justify-between my-[0.75rem] gap-3 h-[100%] max-h-[800px]">
+         <div className="max-md:max-h-full max-md:flex-col flex justify-between my-[0.75rem] gap-3 h-[100%] max-h-[800px]">
             <div className=" w-[40%] max-md:w-[100%]  border-[5px] border-solid border-custom-primary rounded-lg flex justify-center place-items-center ">
                <div className="content h-[100%] flex place-items-center justify-center w-full">
                   {showImage && (
@@ -97,7 +97,7 @@ function DigitalArt() {
             </div>
          </div>
       </div>
-   )
+   );
 }
 
-export default DigitalArt
+export default DigitalArt;

@@ -39,16 +39,16 @@ export default function SkillItem({
          {skill ? (
             <button
                onClick={selectedButton}
-               className={`${borderColor} justify-start group hover:bg-custom-third cursor-pointer shadow-md bg-custom-secondary rounded-[30px] max-md:rounded-lg skilltext  group flex select-none`}
+               className={`${borderColor} ${borderColor} justify-start group hover:bg-custom-third cursor-pointer shadow-md rounded-[30px] max-md:rounded-lg skilltext  group flex select-none`}
             >
                <div
-                  className={`${borderColor}  w-[30px] max-md:rounded-l-[10px] group-hover:bg-custom-third  h-[100%] rounded-l-[30px]`}
+                  className={`${borderColor} ${borderColor} w-[30px] max-md:rounded-l-[10px] group-hover:bg-custom-third  h-[100%] rounded-l-[30px]`}
                ></div>
                <div
-                  className={`${backgroundColor}  relative  skilltextpadding w-full max-md:border-[2px] skillhover group-hover:border-custom-third  border-custom-secondary rounded-r-[30px] max-md:rounded-r-lg  max-md:rounded-l-[5px] rounded-l-[25px] border-[6px] h-full place-content-center`}
+                  className={`${backgroundColor} relative  skilltextpadding w-full max-md:border-[2px] skillhover group-hover:border-custom-third  rounded-r-[30px] max-md:rounded-r-lg  max-md:rounded-l-[5px] rounded-l-[25px] border-[6px] h-full place-content-center`}
                >
                   <div
-                     className={`${themeStyle.headingColor} relative bg-cu z-30 font-primary max-md:leading-none duration-100 text-[27px] group-hover:text-white min-[1600px]:text-[40px] min-[1600px]:leading-10 max-md:text-[19px] leading-7`}
+                     className={`${themeStyle.headingColor} px-3 relative bg-cu z-30 font-primary max-md:leading-none duration-100 text-[27px] group-hover:text-white min-[1600px]:text-[40px] min-[1600px]:leading-10 max-md:text-[19px] leading-7`}
                   >
                      {text}
                   </div>

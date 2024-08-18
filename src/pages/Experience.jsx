@@ -1,16 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../styles/Experience.css";
 import { EXPERIENCELIST } from "../records/records";
 import ExperienceList from "../components/ExperienceList";
+import { ThemeContext } from "../context/ThemeContext";
 
 const Experience = () => {
+   const { themeStyle } = useContext(ThemeContext);
    return (
-      <div name="experience" className="flex h-screen w-full content ">
-         <div className=" mx-auto flex-col justify-center place-items-center  w-full h-full relative mt-[100px]">
-            <p className="font-primary text-[70px] textshadow flex justify-center text-custom-secondary sm:text-[50px] font-bold self-center p-2 ">
+      <div
+         name="experience"
+         className="flex min-h-screen max-w-screen-lg mx-auto content "
+      >
+         <div className=" mx-auto flex-col justify-center place-items-center  h-full relative mt-[100px] max-md:mt-[60px]">
+            <p
+               className={`${themeStyle.headingColor} ${themeStyle.shadow} text-center leading-10 font-primary text-[50px] max-md:text-[35px] textshadow flex justify-center text-custom-secondary  font-bold self-center p-2`}
+            >
                WORK EXPERIENCE
             </p>
-            <div className="relative flex mt-[20px] flex-col justify-center place-items-center">
+            <div className="relative flex max-lg:pl-12 max-sm:pl-7 py-[40px] flex-col justify-center place-items-center gap-8 px-7">
                {EXPERIENCELIST.map(
                   (
                      {

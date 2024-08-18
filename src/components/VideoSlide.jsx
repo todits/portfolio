@@ -1,9 +1,9 @@
-import React, { useContext } from "react"
-import "../styles/Portfolio.css"
-import { ThemeContext } from "../context/ThemeContext"
+import React, { useContext } from "react";
+import "../styles/Portfolio.css";
+import { ThemeContext } from "../context/ThemeContext";
 
 export default function VideoSlide({ image, name, selectCircle, rate }) {
-   const { themeStyle } = useContext(ThemeContext)
+   const { themeStyle } = useContext(ThemeContext);
    return (
       <div className="cursor-pointer videoEditing flex max-md:w-[80px] flex-col">
          <div className="flex justify-center">
@@ -14,7 +14,7 @@ export default function VideoSlide({ image, name, selectCircle, rate }) {
             />
          </div>
          <div
-            className={`font-bold tracking-wide text-center max-md:text-[15px] max-md:leading-4 leading-6 text-2xl ${themeStyle.headingColor} w-auto`}
+            className={`font-bold tracking-wide videoImage self-center text-center max-md:text-[15px] max-md:leading-4 leading-6 text-2xl ${themeStyle.headingColor} w-auto`}
          >
             {name}
          </div>
@@ -59,5 +59,5 @@ export default function VideoSlide({ image, name, selectCircle, rate }) {
             </svg>
          </div>
       </div>
-   )
+   );
 }

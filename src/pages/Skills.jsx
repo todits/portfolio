@@ -63,21 +63,10 @@ export default function Skills() {
    return (
       <div
          name="skills"
-         className={` content max-w-screen-xl min-h-screen h-full max-md:pt-[40px] max-md:px-[20px] flex flex-col min-[1600px]:px-[0px] px-[5%] mx-auto min-[1600px]:min-h-[100vh]  w-full pt-[40px] min-[1600px]:pt-[70px] pb-[20px]`}
+         className={` content max-w-screen-xl min-h-screen h-full max-md:pt-[60px] max-md:px-[20px] flex flex-col min-[1600px]:px-[0px] px-[5%] mx-auto min-[1600px]:min-h-[100vh]  w-full pt-[40px] min-[1600px]:pt-[70px] pb-[20px]`}
       >
-         <div className="max-w-screen-xl justify-center self-center w-[100%]">
-            <div className=" flex gap-3 max-md:flex-col max-md:h-auto min-[1600px]:h-[100px] max-md:mt-[10px] h-[70px] mt-[30px] justify-between ">
-               <div
-                  className={` max-md:self-center flex justify-center ${
-                     setShowSkillsList && "max-md:hidden"
-                  }`}
-               >
-                  <h2
-                     className={`${themeStyle.brownHeading} text-3xl max-md:text-[25px] font-primary  inline  border-gray-500`}
-                  >
-                     {selectedSkill}
-                  </h2>
-               </div>
+         <div className="">
+            <div className="max-w-screen-xl  self-center w-[100%] flex gap-3 max-md:flex-col max-md:h-auto min-[1600px]:h-[100px] max-md:mt-[10px] h-[70px] mt-[30px] justify-end ">
                {location.pathname !== "/skill/list" && (
                   <AnimatePresence>
                      <motion.div

@@ -1,13 +1,13 @@
-import React, { useContext } from "react"
-import gif from "../assets/images/about.gif"
-import speech from "../assets/images/bubblespeach.png"
-import { ThemeContext } from "../context/ThemeContext"
+import React, { useContext } from "react";
+import gif from "../assets/images/about.gif";
+import speech from "../assets/images/bubblespeach.png";
+import { ThemeContext } from "../context/ThemeContext";
 
 const About = () => {
-   const { textColor, backgroundColor, theme } = useContext(ThemeContext)
+   const { textColor, backgroundColor, theme } = useContext(ThemeContext);
    return (
       <div name="about" className={`content w-full h-screen ${textColor}`}>
-         <div className="max-w-screen-xl px-[80px] max-md:pt-[144px] max-md:px-[20px] pt-20 min-[1600px]:pt-28 mx-auto flex flex-col place-content-start w-full h-full">
+         <div className="max-w-screen-xl px-[80px] max-md:pt-[167px] max-md:px-[20px] pt-20 min-[1600px]:pt-28 mx-auto flex flex-col place-content-start w-full h-full">
             <p
                className={`${
                   theme === "light"
@@ -57,7 +57,7 @@ const About = () => {
             </div>
          </div>
       </div>
-   )
-}
+   );
+};
 
-export default About
+export default About;
