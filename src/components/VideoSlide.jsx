@@ -1,7 +1,13 @@
 import React, { useContext } from "react";
 import "../styles/Portfolio.css";
 import { ThemeContext } from "../context/ThemeContext";
+import styled from "styled-components";
 
+const Image = styled.img`
+   height: auto;
+   min-height: 60px;
+   animation: pop-in 1.5s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards;
+`;
 export default function VideoSlide({ image, name, selectCircle, rate }) {
    const { themeStyle } = useContext(ThemeContext);
    return (
@@ -10,11 +16,11 @@ export default function VideoSlide({ image, name, selectCircle, rate }) {
             <img
                src={image}
                alt=""
-               className="videoImage max-md:hover:scale-100"
+               className="videoImage max-md:hover:scale-100 "
             />
          </div>
          <div
-            className={`font-bold tracking-wide videoImage self-center text-center max-md:text-[15px] max-md:leading-4 leading-6 text-2xl ${themeStyle.headingColor} w-auto`}
+            className={`font-bold tracking-wide w-[140px] self-center text-center max-md:text-[15px] max-md:leading-4 leading-6 text-2xl ${themeStyle.headingColor} w-auto`}
          >
             {name}
          </div>
@@ -53,7 +59,7 @@ export default function VideoSlide({ image, name, selectCircle, rate }) {
                   cx="70"
                   cy="70"
                   r="60"
-                  stroke-linecap="round"
+                  strokeLinecap="round"
                   className={`${selectCircle}`}
                />
             </svg>

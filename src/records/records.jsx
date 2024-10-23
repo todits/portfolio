@@ -226,6 +226,49 @@ export const SKILL_ITEMS = [
       image4: wix,
       text: "Web Design",
       skill: "webDesign",
+      icons: [
+         {
+            id: 1,
+            image: wordpress,
+            name: "Wordpress",
+            selectCircle: "circle85",
+            rate: "85%",
+            animate: {
+               animation: `slide-in-from-left 1s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+
+         {
+            id: 2,
+            image: divi,
+            name: "Divi Themes",
+            selectCircle: "circle85",
+            rate: "87%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.1s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 3,
+            image: clickFunnels,
+            name: "Click Funnels",
+            selectCircle: "circle75",
+            rate: "75%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.2s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 4,
+            image: wix,
+            name: "Wix",
+            selectCircle: "circle83",
+            rate: "82%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.3s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+      ],
    },
    {
       id: 2,
@@ -238,6 +281,69 @@ export const SKILL_ITEMS = [
       image6: laravel,
       text: "Web Developing",
       skill: "webDeveloping",
+      icons: [
+         {
+            id: 1,
+            name: "CSS",
+            image: css,
+            color: "bg-blue-400",
+            rate: "80%",
+            animate: {
+               animation: `slide-in-from-left 1s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+
+         {
+            id: 2,
+            name: "Tailwind",
+            image: tailwind,
+            color: "bg-green-300",
+            rate: "82%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.2s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 3,
+            name: "HTML",
+            image: html,
+            color: "bg-orange-400",
+            rate: "85%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.3s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 4,
+            name: "JAVA",
+            image: javascript,
+            color: "bg-yellow-400",
+            rate: "85%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.4s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 5,
+            name: "React",
+            image: reactImage,
+            color: "bg-cyan-300",
+            rate: "90%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.5s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 6,
+            name: "Laravel",
+            image: laravel,
+            color: "bg-red-400",
+            rate: "80%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.6s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+      ],
    },
    {
       id: 7,
@@ -248,6 +354,48 @@ export const SKILL_ITEMS = [
       image4: tiktok,
       text: "Social Media Manager",
       skill: "socialMediaManager",
+      icons: [
+         {
+            id: 1,
+            image: facebook,
+            name: "Facebook",
+            selectCircle: "circle85",
+            rate: "88%",
+            animate: {
+               animation: `slide-in-from-left 1s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 2,
+            image: instagram,
+            name: "Instagram",
+            selectCircle: "circle85",
+            rate: "88%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.1s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 3,
+            image: linkedin,
+            name: "LinkedIn",
+            selectCircle: "circle75",
+            rate: "75%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.2s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 4,
+            image: tiktok,
+            name: "Tiktok",
+            selectCircle: "circle85",
+            rate: "85%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.3s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+      ],
    },
 
    {
@@ -260,6 +408,60 @@ export const SKILL_ITEMS = [
       image5: capcut,
       text: "Video Editing",
       skill: "videoEditing",
+      icons: [
+         {
+            id: 1,
+            image: canva,
+            name: "Canva",
+            selectCircle: "circle85",
+            rate: "85%",
+            animate: {
+               animation: `slide-in-from-left 1s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+
+         {
+            id: 2,
+            image: powerdirector,
+            name: "Power Director",
+            selectCircle: "circle80",
+            rate: "80%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.1s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+
+         {
+            id: 3,
+            image: adobe,
+            name: "Adobe Premier Pro",
+            selectCircle: "circle75",
+            rate: "75%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.2s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 4,
+            image: wondershare,
+            name: "Filmora Wondershare",
+            selectCircle: "circle83",
+            rate: "83%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.3s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 5,
+            image: capcut,
+            name: "Capcut",
+            selectCircle: "circle85",
+            rate: "86%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.4s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+      ],
    },
 
    {
@@ -269,6 +471,48 @@ export const SKILL_ITEMS = [
       image2: ai,
       text: "Digital Art",
       skill: "digitalArt",
+      icons: [
+         {
+            id: 1,
+            image: facebook,
+            name: "Facebook",
+            selectCircle: "circle85",
+            rate: "88%",
+            animate: {
+               animation: `slide-in-from-left 1s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 2,
+            image: instagram,
+            name: "Instagram",
+            selectCircle: "circle85",
+            rate: "88%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.1s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 3,
+            image: linkedin,
+            name: "LinkedIn",
+            selectCircle: "circle75",
+            rate: "75%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.2s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 4,
+            image: tiktok,
+            name: "Tiktok",
+            selectCircle: "circle85",
+            rate: "85%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.3s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+      ],
    },
    {
       id: 8,
@@ -276,6 +520,28 @@ export const SKILL_ITEMS = [
       image1: clickFunnels,
       image2: activeCampaign,
       text: "Marketing Funnels",
+      icons: [
+         {
+            id: 1,
+            image: activeCampaign,
+            name: "Active Campaign",
+            selectCircle: "circle85",
+            rate: "88%",
+            animate: {
+               animation: `slide-in-from-left 1s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 2,
+            image: clickFunnels,
+            name: "Click Funnels",
+            selectCircle: "circle85",
+            rate: "88%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.1s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+      ],
    },
    {
       id: 9,
@@ -286,7 +552,58 @@ export const SKILL_ITEMS = [
       image4: gdrive,
       image5: gmeet,
       image6: gmail,
-
+      icons: [
+         {
+            id: 1,
+            image: spreadsheet,
+            name: "Google Spreadsheet",
+            selectCircle: "circle85",
+            rate: "88%",
+            animate: {
+               animation: `slide-in-from-left 1s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 2,
+            image: gdocs,
+            name: "Google Docs",
+            selectCircle: "circle85",
+            rate: "88%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.1s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 3,
+            image: gcalendar,
+            name: "Google Calendar",
+            selectCircle: "circle85",
+            rate: "88%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.2s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 4,
+            image: gdrive,
+            name: "Google Drive",
+            selectCircle: "circle85",
+            rate: "88%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.3s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 5,
+            image: gmail,
+            name: "Gmail",
+            selectCircle: "circle85",
+            rate: "88%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.4s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+      ],
       text: "Google Workspace",
    },
 
@@ -298,6 +615,48 @@ export const SKILL_ITEMS = [
       image3: publisher,
       image4: excel,
       text: "MS Office",
+      icons: [
+         {
+            id: 1,
+            image: word,
+            name: "Word",
+            selectCircle: "circle85",
+            rate: "88%",
+            animate: {
+               animation: `slide-in-from-left 1s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 2,
+            image: powerpoint,
+            name: "PowerPoint",
+            selectCircle: "circle85",
+            rate: "88%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.1s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 3,
+            image: publisher,
+            name: "Publisher",
+            selectCircle: "circle85",
+            rate: "88%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.2s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 4,
+            image: excel,
+            name: "Excel",
+            selectCircle: "circle85",
+            rate: "88%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.3s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+      ],
    },
    {
       id: 4,
@@ -306,6 +665,38 @@ export const SKILL_ITEMS = [
       image2: activeCampaign,
       image4: clickFunnels,
       text: "Email Marketing",
+      icons: [
+         {
+            id: 1,
+            image: gmail,
+            name: "Gmail",
+            selectCircle: "circle85",
+            rate: "88%",
+            animate: {
+               animation: `slide-in-from-left 1s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 2,
+            image: activeCampaign,
+            name: "Active Campaign",
+            selectCircle: "circle85",
+            rate: "88%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.1s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 3,
+            image: clickFunnels,
+            name: "Click Funnels",
+            selectCircle: "circle85",
+            rate: "88%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.2s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+      ],
    },
    {
       id: 3,
@@ -314,6 +705,38 @@ export const SKILL_ITEMS = [
       image2: ai,
       image3: canva,
       text: "Photo Editing",
+      icons: [
+         {
+            id: 1,
+            image: ps,
+            name: "Adobe Photoshop",
+            selectCircle: "circle85",
+            rate: "88%",
+            animate: {
+               animation: `slide-in-from-left 1s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 2,
+            image: ai,
+            name: "Adobe Illustrator",
+            selectCircle: "circle85",
+            rate: "88%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.1s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+         {
+            id: 3,
+            image: canva,
+            name: "Canva",
+            selectCircle: "circle85",
+            rate: "88%",
+            animate: {
+               animation: `slide-in-from-left 1s 0.2s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+            },
+         },
+      ],
    },
 ];
 
@@ -390,6 +813,9 @@ export const EXPERIENCELIST = [
       role3: "Graphic Design",
       role4: "Web Design",
       role5: "Email Marketing",
+      animate: {
+         animation: `slide-in-from-left 1s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+      },
    },
    {
       id: 4,
@@ -401,6 +827,9 @@ export const EXPERIENCELIST = [
       role3: "Graphic Design",
       role4: "Web Design",
       role5: "Email Marketing",
+      animate: {
+         animation: `slide-in-from-left 1s 0.3s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+      },
    },
    {
       id: 3,
@@ -408,6 +837,9 @@ export const EXPERIENCELIST = [
       employer: "Web Developer",
       job: "Trainee",
       role1: "With a background in web development encompassing both front-end and back-end expertise. My knowledge spans across various technologies, including Laravel, PHP, CSS, Java, and HTML5.",
+      animate: {
+         animation: `slide-in-from-left 1s 0.6s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+      },
    },
    {
       id: 2,
@@ -418,6 +850,9 @@ export const EXPERIENCELIST = [
       role2: "Video Editor",
       role3: "National Illustrator",
       role4: "Assistant to the Principal",
+      animate: {
+         animation: `slide-in-from-left 1s 0.9s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+      },
    },
    {
       id: 1,
@@ -426,5 +861,8 @@ export const EXPERIENCELIST = [
       job: "Sales Customer Agent",
       role1: "Attend customer bill querries.",
       role2: "Promote products and services",
+      animate: {
+         animation: `slide-in-from-left 1s 1.2s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+      },
    },
 ];

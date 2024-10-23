@@ -83,32 +83,27 @@ const Home = ({ onSelectNav }) => {
       setShowSkillsList(false);
    };
    return (
-      <div
-         name="home"
-         className="flex h-screen w-full max-sm:h-full relative content"
-      >
+      <div name="home" className="flex h-screen w-full max-sm:h-full relative ">
          <img
             className="absolute z-0 h-full w-full object-cover opacity-70 min-h-screen"
             src={background}
          />
 
          <div className="min-h-screen max-sm:justify-between justify-start w-[100%] max-sm:pt-[40px] flex items-center  h-[100%] flex-col pt-[10vh]">
-            <div>
-               <h2
-                  style={{ fontSize: "clamp(35px, 4.1vw, 80px)" }}
-                  className={`max-sm:text-[20px] max-sm:px-[20px] flex mb-[2%] pt-[20px] min-[1600px]:py-[50px] font-primary text-center leading-[35px] relative z-10 ${
-                     theme === "light"
-                        ? "text-custom-secondary duration-300 textshadow"
-                        : "text-white duration-300 textshadowdark"
-                  }`}
-               >
-                  PERSONAL PORTFOLIO
-               </h2>
-            </div>
+            <h2
+               style={{ fontSize: "clamp(35px, 4.1vw, 80px)" }}
+               className={`rise max-sm:text-[20px] max-sm:px-[20px] flex mb-[2%] pt-[20px] min-[1600px]:py-[50px] font-primary text-center leading-[35px] relative z-10 ${
+                  theme === "light"
+                     ? "text-custom-secondary duration-300 textshadow"
+                     : "text-white duration-300 textshadowdark"
+               }`}
+            >
+               PERSONAL PORTFOLIO
+            </h2>
 
             <div className="w-[100%] h-[100%] max-sm:min-h-[80vh] max-sm:h-full flex justify-between max-sm:gap-[45px] flex-col relative ">
-               <div className="flex px-[25px] mx-auto  h-[auto] max-sm:my-[10px]">
-                  <div className="max-w-screen-xl flex flex-col justify-center w-[60%] max-sm:w-[100%] ">
+               <div className="flex px-[5%] mx-auto  h-[auto] max-sm:my-[10px] w-full max-w-screen-xl ">
+                  <div className="showText max-w-screen-xl flex flex-col justify-center w-[60%] max-sm:w-[100%] ">
                      <h3
                         className={`text-outline max-sm:text-[20px] duration-300 text-[25px] min-[1600px]:text-[30px] font-bold -mb-[20px] z-20 ${
                            theme === "light"
@@ -200,11 +195,11 @@ const Home = ({ onSelectNav }) => {
                      ))}
                   </div>
                </div>
-               <div className="absolute min-[1600px]:max-w-[2150px] max-w-[1100px] w-[100%]  self-center bottom-0">
+               <div className="slideleft absolute min-[1600px]:max-w-[2150px] max-w-[1100px] w-[100%]  self-center bottom-0">
                   <img
                      src={Profile}
                      alt="my profile"
-                     className="max-sm:w-[70%] max-sm:max-w-[300px] mx-auto min-[1600px]:min-w-none  min-[1600px]:w-[800px] w-[430px] absolute bottom-[0] right-[0]"
+                     className="max-sm:h-[400px]  mx-auto min-[1600px]:min-w-none h-[70vh] absolute bottom-[0] right-[0]"
                   />
                </div>
             </div>

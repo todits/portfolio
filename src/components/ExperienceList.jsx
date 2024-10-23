@@ -11,12 +11,16 @@ export default function ExperienceList({
    role4,
    role5,
    index,
+   style,
 }) {
    const alternateStyle = index % 2 === 0 ? "bg-white" : "bg-[#bee7e7] ";
    const { theme, themeStyle } = useContext(ThemeContext);
 
    return (
-      <div className={`flex justify-center py-4 w-full `}>
+      <div
+         style={style}
+         className={`rise flex justify-center py-4 w-full translate-x-[-40%] opacity-0`}
+      >
          <div className="flex max-sm:flex-col max-sm:  w-full justify-center experiencegroup group hover:scale-105 duration-300">
             <div className="relative flex w-[60%] max-sm:w-[100%] max-sm:px-4">
                <div className="font-primary flex justify-center self-center h-[100%]">
