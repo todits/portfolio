@@ -9,6 +9,7 @@ import image3 from "../../assets/images/skills/webDeveloping/project3.png";
 import image4 from "../../assets/images/skills/webDeveloping/project4.png";
 import image5 from "../../assets/images/skills/webDeveloping/project5.png";
 import { ThemeContext } from "../../context/ThemeContext";
+import { animate } from "framer-motion";
 
 const Projects = [
    {
@@ -27,6 +28,9 @@ const Projects = [
          { id: 5, skill: "mobile responsive" },
          { id: 4, skill: "2 players" },
       ],
+      animationstyle: {
+         animation: `slide-in-from-top 1s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+      },
    },
    {
       id: 5,
@@ -41,8 +45,11 @@ const Projects = [
          { id: 6, skill: "JS" },
          { id: 3, skill: "TypeScript" },
          { id: 5, skill: "mobile responsive" },
-         { id: 3, skill: "useContext" },
+         { id: 4, skill: "useContext" },
       ],
+      animationstyle: {
+         animation: `slide-in-from-top 1s 0.3s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+      },
    },
    {
       id: 1,
@@ -60,6 +67,9 @@ const Projects = [
          { id: 6, skill: "Udemy Course" },
          { id: 7, skill: "tasks" },
       ],
+      animationstyle: {
+         animation: `slide-in-from-top 1s 0.6s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+      },
    },
    {
       id: 2,
@@ -77,6 +87,9 @@ const Projects = [
          { id: 4, skill: "useState" },
          { id: 5, skill: "challenge" },
       ],
+      animationstyle: {
+         animation: `slide-in-from-top 1s 0.9s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+      },
    },
    {
       id: 3,
@@ -93,9 +106,16 @@ const Projects = [
          { id: 4, skill: "add to cart" },
          { id: 5, skill: "calculator" },
       ],
+      animationstyle: {
+         animation: `slide-in-from-top 1s 1.2s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards`,
+      },
    },
 ];
-
+// const styles = {
+//    height: "auto",
+//    minHeight: "60px",
+//    ,
+// };
 function WebDeveloping() {
    const { themeStyle } = useContext(ThemeContext);
 
@@ -131,11 +151,11 @@ function WebDeveloping() {
                <div className=" relative h-[80vh] min-h-[800px] "></div>
                <div className="flex justify-start flex-col w-[85%] gap-2 max-md:pl-[5%]">
                   <div
-                     className={`${themeStyle.headingColor} ${themeStyle.shadow} max-md:px-0 font-primary text-[50px] max-md:text-[30px] max-md:text-center max-md:leading-8 textshadow min-[1600px]:text-[70px]`}
+                     className={`${themeStyle.headingColor} ${themeStyle.shadow} rise max-md:px-0 font-primary text-[50px] max-md:text-[30px] max-md:text-center max-md:leading-8 textshadow min-[1600px]:text-[70px]`}
                   >
                      WEB DEVELOPING SKILLS
                   </div>
-                  <p className=" px-11 max-md:px-0 place-items-center">
+                  <p className=" px-11 max-md:px-0 place-items-center rise ">
                      While working as a teacher, I had the opportunity to be
                      exposed to web development through my brother, who works as
                      a web developer. He taught me the ropes of web development,
@@ -152,12 +172,21 @@ function WebDeveloping() {
                   </h2>
                   <div className="grid gap-6 grid-cols-3 max-[1300px]:grid-cols-2 max-md:grid-cols-1">
                      {Projects.map(
-                        ({ id, image, title, link, description, skills }) => (
+                        ({
+                           id,
+                           image,
+                           title,
+                           link,
+                           description,
+                           skills,
+                           animationstyle,
+                        }) => (
                            <a
-                              className={`${themeStyle.bgWhite} w-full cursor-pointer  shadow rounded-lg border-custom-primary border hover:scale-105 max-md:hover:scale-100 duration-300 flex flex-col h-full`}
+                              className={`${themeStyle.bgWhite} translate-y-[30%] opacity-0 w-full cursor-pointer  shadow rounded-lg border-custom-primary border hover:scale-105 max-md:hover:scale-100 duration-300 flex flex-col h-full`}
                               key={id}
                               href={link}
                               target="_blank"
+                              style={animationstyle}
                            >
                               <img
                                  src={image}

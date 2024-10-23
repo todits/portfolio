@@ -26,7 +26,7 @@ export default function Header({ children }) {
    };
    return (
       <div
-         className={`flex justify-between max-md:h-[45px] items-center duration-300 w-full min-[1600px]:h-[80px] h-[60px] text-black fixed ${
+         className={`slidefromtop flex justify-between max-md:h-[45px] items-center duration-300 w-full min-[1600px]:h-[80px] h-[60px] text-black fixed ${
             theme === "light" ? "bg-custom-secondary" : "bg-gray-800"
          }  px-[4%] navbarbackground`}
       >

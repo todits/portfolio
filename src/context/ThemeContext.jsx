@@ -1,5 +1,6 @@
 import { head } from "lodash";
 import { createContext, useEffect, useState } from "react";
+import { DIGITALIMAGES } from "../records/imageRecords";
 
 export const ThemeContext = createContext();
 
@@ -7,6 +8,11 @@ const ThemeContextProvider = ({ children }) => {
    const savedTheme = JSON.parse(localStorage.getItem("theme"));
    const [theme, setTheme] = useState(savedTheme || "light");
    const [showSkillsList, setShowSkillsList] = useState(true);
+   const [digitalArtImages, setDigitalArtImages] = useState([]);
+   console.log(digitalArtImages);
+   useEffect(() => {
+      setDigitalArtImages(DIGITALIMAGES);
+   }, []);
 
    const textColor = theme === "light" ? "text-black" : "text-white ";
 
@@ -57,6 +63,7 @@ const ThemeContextProvider = ({ children }) => {
             themeStyle,
             showSkillsList,
             setShowSkillsList,
+            digitalArtImages,
          }}
       >
          {children}

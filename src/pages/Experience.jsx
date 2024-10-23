@@ -13,7 +13,7 @@ const Experience = () => {
       >
          <div className=" mx-auto flex-col justify-center place-items-center  h-full relative mt-[100px] max-md:mt-[60px]">
             <p
-               className={`${themeStyle.headingColor} ${themeStyle.shadow} text-center leading-10 font-primary text-[50px] max-md:text-[35px] textshadow flex justify-center text-custom-secondary  font-bold self-center p-2`}
+               className={`${themeStyle.headingColor} ${themeStyle.shadow}  text-center leading-10 font-primary text-[50px] max-md:text-[35px] textshadow flex justify-center text-custom-secondary  font-bold self-center p-2`}
             >
                WORK EXPERIENCE
             </p>
@@ -30,6 +30,7 @@ const Experience = () => {
                         role3,
                         role4,
                         role5,
+                        animate,
                      },
                      index
                   ) => (
@@ -44,6 +45,7 @@ const Experience = () => {
                         role4={role4}
                         role5={role5}
                         index={index}
+                        style={animate}
                      />
                   )
                )}

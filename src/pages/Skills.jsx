@@ -14,33 +14,33 @@ const skillsset = [
    {
       image: skills,
       label: "Skills",
-      link: "list",
+      link: "/about",
    },
    {
       image: digitalArt,
       label: "Digital Art",
-      link: "digitalArt",
+      link: "/skill/digitalArt",
    },
    {
       image: webDeveloping,
       label: "Web Developing",
-      link: "webDeveloping",
+      link: "/skill/webDeveloping",
    },
 
    {
       image: videoEditing,
       label: "Video Editing",
-      link: "videoEditing",
+      link: "/skill/videoEditing",
    },
    {
       image: webDesign,
       label: "Web Design",
-      link: "webDesign",
+      link: "/skill/webDesign",
    },
    {
       image: socialMedia,
       label: "Social Media Manager",
-      link: "socialMediaManager",
+      link: "/skill/socialMediaManager",
    },
 ];
 
@@ -63,33 +63,31 @@ export default function Skills() {
    return (
       <div
          name="skills"
-         className={` content max-w-screen-xl min-h-screen h-full max-md:pt-[60px] max-md:px-[20px] flex flex-col min-[1600px]:px-[0px] px-[5%] mx-auto min-[1600px]:min-h-[100vh]  w-full pt-[40px] min-[1600px]:pt-[70px] pb-[20px]`}
+         className={` max-w-screen-xl min-h-screen h-full max-md:pt-[60px] max-md:px-[20px] flex flex-col min-[1600px]:px-[0px] px-[5%] mx-auto min-[1600px]:min-h-[100vh]  w-full pt-[40px] min-[1600px]:pt-[70px] pb-[20px]`}
       >
-         <div className="">
-            <div className="max-w-screen-xl  self-center w-[100%] flex gap-3 max-md:flex-col max-md:h-auto min-[1600px]:h-[100px] max-md:mt-[10px] h-[70px] mt-[30px] justify-end ">
-               {location.pathname !== "/skill/list" && (
-                  <AnimatePresence>
-                     <motion.div
-                        key="box"
-                        initial={{ x: "-50%", opacity: 0, scale: 0 }}
-                        animate={{ x: 0, opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.3, ease: "easeOut" }}
-                        className={`flex gap-7 max-md:justify-center`}
-                        exit={{ x: "-50%", opacity: 0, scale: 0 }}
-                     >
-                        {skillsset.map(({ image, label, link }, index) => (
-                           <Link to={`/skill/${link}`} key={index}>
-                              <IconButton
-                                 image={image}
-                                 iconselect={() => handleClickSkill(label)}
-                                 iconName={label}
-                              />
-                           </Link>
-                        ))}
-                     </motion.div>
-                  </AnimatePresence>
-               )}
-            </div>
+         <div className=" w-[100%] flex gap-3  mt-[30px] mb-4 justify-end ">
+            {location.pathname !== "/skill/list" && (
+               <AnimatePresence>
+                  <motion.div
+                     key="box"
+                     initial={{ x: "-50%", opacity: 0, scale: 0 }}
+                     animate={{ x: 0, opacity: 1, scale: 1 }}
+                     transition={{ duration: 1, ease: "easeIn" }}
+                     className={`flex gap-7 max-md:justify-center`}
+                     exit={{ x: "-50%", opacity: 0, scale: 0 }}
+                  >
+                     {skillsset.map(({ image, label, link }, index) => (
+                        <Link to={link} key={index}>
+                           <IconButton
+                              image={image}
+                              iconselect={() => handleClickSkill(label)}
+                              iconName={label}
+                           />
+                        </Link>
+                     ))}
+                  </motion.div>
+               </AnimatePresence>
+            )}
          </div>
 
          <Outlet />

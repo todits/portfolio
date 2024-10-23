@@ -9,7 +9,7 @@ import { ThemeContext } from "../../context/ThemeContext";
 function DigitalArt() {
    const [image, setImage] = useState("sample");
    const [showImage, setShowImage] = useState(true);
-   const { themeStyle } = useContext(ThemeContext);
+   const { themeStyle, digitalArtImages } = useContext(ThemeContext);
 
    useEffect(() => {
       console.log("Selected Skill:");
@@ -29,7 +29,7 @@ function DigitalArt() {
          name="digitalArt"
          className="max-md:px-0 skillsScreen relative justify-start max-w-screen-xl p-4 mx-auto flex flex-col place-content-start w-full h-full"
       >
-         <div className="max-md:border-[3px] flex justify-center border-[5px] border-solid rounded-lg  border-custom-primary">
+         <div className="slidefromtop max-md:border-[3px] flex justify-center border-[5px] border-solid rounded-lg  border-custom-primary">
             <div className="max-md:grid-rows-1 grid grid-flow-col grid-rows-2 gap-[5px] overflowscroll p-[5px]">
                {DIGITALIMAGES.map(({ id, icon, picture }) => {
                   return (

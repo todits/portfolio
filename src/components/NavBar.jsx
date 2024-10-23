@@ -16,10 +16,10 @@ export default function NavBar() {
          id: 2,
          link: "about",
       },
-      {
-         id: 4,
-         link: "skills",
-      },
+      // {
+      //    id: 4,
+      //    link: "skills",
+      // },
       // {
       // 	id: 5,
       // 	link: "portfolio",

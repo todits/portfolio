@@ -4,7 +4,7 @@ import { styled } from "styled-components";
 const Image = styled.img`
    height: auto;
    min-height: 60px;
-   animation: pop-in 0.5s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards;
+   animation: pop-in 1.5s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards;
 `;
 
 function DigitalSlide({ name, onSelect, isSelected }) {

@@ -48,7 +48,7 @@ function App() {
    const NavItems = [
       { name: "home", path: "/" },
       { name: "about", path: "about" },
-      { name: "skills", path: "skill/list" },
+      // { name: "skills", path: "skill/list" },
       { name: "experience", path: "experience" },
       { name: "contact", path: "contact" },
    ];

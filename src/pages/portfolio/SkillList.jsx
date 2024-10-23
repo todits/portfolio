@@ -22,7 +22,7 @@ const SkillList = () => {
          </h1>
          <div className="grid-cols-3 webkitcenter max-md:grid-cols-1 max-md:gap-[1%] grid gap-[5%] max-w-screen-xl self-center w-[100%] text-center text-custom-secondary text-4xl ">
             {SKILL_ITEMS.map((skill) => (
-               <div>
+               <div key={skill.text}>
                   {skill.skill !== undefined ? (
                      <Link to={`/skill/${skill.skill}`} key={skill.id}>
                         <SkillItem
